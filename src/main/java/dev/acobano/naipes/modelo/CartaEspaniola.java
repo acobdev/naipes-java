@@ -2,22 +2,17 @@ package dev.acobano.naipes.modelo;
 
 /**
  * Clase Java que simula el comportamiento de un naipe de la baraja española.
- * @author acobano
+ * @author Álvaro Cobano
  */
 public class CartaEspaniola extends Carta<PalosBarajaEspaniola>
 {
     
-    /*********************/
-    /*** CONSTRUCTORES ***/
-    /*********************/
+    /*******************/
+    /*** CONSTRUCTOR ***/
+    /*******************/
     
     /**
-     * Constructor sin parámetros de entrada.
-     */
-    public CartaEspaniola() {}
-    
-    /**
-     * Constructor con parámetros de entrada.
+     * Constructor con parámetros de entrada que representan los atrobutos del naipe.
      * @param numero Parámetro de tipo entero que representa el número de la carta.
      * @param palo Parámetro del tipo enumerado 'PalosBarajaEspaniola'
      * que representa el palo de la carta.
@@ -80,7 +75,7 @@ public class CartaEspaniola extends Carta<PalosBarajaEspaniola>
      */
     public boolean esNumero()
     {
-        return this.getNumero() <= 10;
+        return !this.esComodin() && this.getNumero() < 10;
     }
     
     /**
@@ -90,7 +85,7 @@ public class CartaEspaniola extends Carta<PalosBarajaEspaniola>
      */
     public boolean esFigura()
     {
-        return this.getNumero() > 10;
+        return this.getNumero() >= 10;
     }
     
     /**
@@ -169,7 +164,7 @@ public class CartaEspaniola extends Carta<PalosBarajaEspaniola>
     
     /**
      * Método sobreescrito de la superclase Object.
-     * @return Cadena de texto con la información
+     * @return Cadena de texto con toda la información sobre el naipe.
      */
     @Override
     public String toString()

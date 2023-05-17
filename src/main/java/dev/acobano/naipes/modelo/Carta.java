@@ -6,7 +6,7 @@ package dev.acobano.naipes.modelo;
  * @author Álvaro Cobano
  * @param <T> Clase enumerada mutable que representa el palo de la carta.
  */
-public abstract class Carta<T>
+public abstract class Carta<T> extends Object
 {
     
     /*****************/

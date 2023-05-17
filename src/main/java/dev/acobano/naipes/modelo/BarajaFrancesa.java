@@ -6,6 +6,11 @@ package dev.acobano.naipes.modelo;
  */
 public class BarajaFrancesa extends Baraja
 {
+     
+    /*********************/
+    /*** CONSTRUCTORES ***/
+    /*********************/
+    
     /**
      * Constructor que instancia una baraja ordenada de cartas de póker.
      * @param numeroJoker Parámetro de tipo entero que indica el número 

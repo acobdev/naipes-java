@@ -4,7 +4,7 @@ package dev.acobano.naipes.modelo;
  * CLASE JAVA ABSTRACTA QUE REPRESENTA A UN MAZO ESTÁNDAR DE CARTAS
  * @author Álvaro Cobano
  */
-public abstract class Baraja 
+public abstract class Baraja extends Object
 {
     
     /*****************/

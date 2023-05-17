@@ -7,17 +7,12 @@ package dev.acobano.naipes.modelo;
 public class CartaFrancesa extends Carta<PalosBarajaFrancesa>
 {
      
-    /*********************/
-    /*** CONSTRUCTORES ***/
-    /*********************/
+    /*******************/
+    /*** CONSTRUCTOR ***/
+    /*******************/
     
     /**
-     * Constructor sin parámetros de entrada.
-     */
-    public CartaFrancesa() {}
-    
-    /**
-     * Constructor con parámetros de entrada.
+     * Constructor con parámetros de entrada que representan los atributos de la carta.
      * @param numero Parámetro de tipo entero que representa el número de la carta.
      * @param palo Parámetro del tipo enumerado 'PalosBarajaFrancesa'
      * que representa el palo de la carta.
@@ -100,7 +95,7 @@ public class CartaFrancesa extends Carta<PalosBarajaFrancesa>
      */
     public boolean esNumero()
     {
-        return this.getNumero() <= 10;
+        return !this.esJoker() && this.getNumero() <= 10;
     }
     
     /**
@@ -167,7 +162,7 @@ public class CartaFrancesa extends Carta<PalosBarajaFrancesa>
     
     /**
      * Método sobreescrito de la superclase Object.
-     * @return Cadena de texto con la información
+     * @return Cadena de texto con toda la información sobre el naipe.
      */
     @Override
     public String toString()
