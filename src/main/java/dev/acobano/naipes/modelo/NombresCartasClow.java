@@ -1,0 +1,62 @@
+package dev.acobano.naipes.modelo;
+
+/**
+ * Clase Java enumerada que representa a las diferentes cartas de Clow
+ * del manga y anime 'Card Captor Sakura'.
+ * @author Álvaro Cobano
+ */
+public enum NombresCartasClow
+{
+    VENTISCA,
+    VUELO,
+    SOMBRA,
+    AGUA,
+    LLOVIZNA,
+    BOSQUE,
+    SALTO,
+    ILUSIÓN,
+    SILENCIO,
+    TRUENO,
+    ESPADA,
+    FLOR,
+    ESCUDO,
+    TIEMPO,
+    PODER,
+    NIEBLA,
+    TORMENTA,
+    FLOTE,
+    BORRAR,
+    BRILLO,
+    MOVIMIENTO,
+    LUCHA,
+    LAZO,
+    DORMIR,
+    CANCIÓN,
+    PEQUEÑO,
+    ESPEJO,
+    LABERINTO,
+    REGRESO,
+    DISPARO,
+    DULCE,
+    VELOCIDAD,
+    GRANDE,
+    CREACIÓN,
+    CAMBIO,
+    HIELO,
+    FUEGO,
+    FLECHA,
+    BURBUJAS,
+    OLA,
+    EQUILIBRIO,
+    ATRAVESAR,
+    NIEVE,
+    VOZ,
+    CANDADO,
+    NUBE,
+    SUEÑO,
+    ARENA,
+    LUZ,
+    OSCURIDAD,
+    GEMELOS,
+    TIERRA
+}
